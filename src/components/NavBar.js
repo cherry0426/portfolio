@@ -45,14 +45,9 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Exprience')}>Experience</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <NavDropdown className= "custom-dropdown" title="Extra-Cirricular Activities" id="basic-nav-dropdown" >
-              <NavDropdown.Item href="#action/3.1">Reading Books</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Painting</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Music</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Chess</NavDropdown.Item>
-            </NavDropdown>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
