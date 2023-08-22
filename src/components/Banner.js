@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/header-img.svg";
+import headerImg from "../assets/header.jpg";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,24 +49,16 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+          <Col xs={10} md={6} xl={7}>
                 <span className="tagline">Welcome!</span>
                 <h1>{'I am Ananya'} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>A Computer Science Student who is passionate about building and enhancing software products. I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p>
-              </div>}
-            </TrackVisibility>
+                <p>A Computer Science Student who is passionate about building and enhancing software products. I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={`animate__animated ${isVisible ? 'animate__zoomIn' : ''}`} style={{ opacity: isVisible ? 1 : 0.9 }}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
+          <Col xs={10} md={6} xl={4} className="d-flex justify-content-end">
+          <div className="image-container">
+            <img src={headerImg} alt="Header Img" />
+          </div>
+        </Col>
         </Row>
       </Container>
     </section>
