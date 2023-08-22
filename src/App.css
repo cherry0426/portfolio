@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smoth;
+  scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
@@ -55,6 +55,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /************ Navbar Css ************/
+
+.custom-dropdown {
+  align-items: center;
+  font-weight: 400;
+  background-color:black;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+}
 
 nav.navbar {
   padding: 18px 0;
