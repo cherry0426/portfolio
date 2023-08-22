@@ -56,7 +56,7 @@ export const Banner = () => {
           </Col>
           <Col xs={10} md={6} xl={4} className="d-flex justify-content-end">
           <div className="image-container">
-            <img src={headerImg} alt="Header Img" />
+            <img src={headerImg} alt="Header Img" width = "300px" height = "385px"/>
           </div>
         </Col>
         </Row>
