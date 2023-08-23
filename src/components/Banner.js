@@ -50,13 +50,13 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={10} md={6} xl={7}>
-                <span className="tagline">Welcome!</span>
+                <span className="tagline">Hi there!</span>
                 <h1>{'I am Ananya'} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                 <p>A Computer Science Student who is passionate about building and enhancing software products. I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p>
           </Col>
           <Col xs={10} md={6} xl={4} className="d-flex justify-content-end">
           <div className="image-container">
-            <img src={headerImg} alt="Header Img" width = "300px" height = "385px"/>
+            <img src={headerImg} alt="Header Img" width = "300px" height = "385px" style={{ borderRadius: "50%", width: "370px", height: "370px" }} />
           </div>
         </Col>
         </Row>

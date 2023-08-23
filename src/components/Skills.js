@@ -1,14 +1,10 @@
-import meter1 from "../assets/meter1.svg";
-import meter2 from "../assets/meter2.svg";
-import meter3 from "../assets/meter3.svg";
-import Carousel from 'react-multi-carousel';
+import React from "react";
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/color-sharp.png"
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -26,35 +22,38 @@ export const Skills = () => {
     }
   };
 
-  return (
+    return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
-                </div>
-            </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <h2>Tech Stack</h2>
+            <ul className="skills-list">
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML/CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <div className="col-md-8">
+            <h2>About Me</h2>
+            <p>
+            A Masters Degree from The University of Texas at Dallas in Computer Science, 2023.<br />
+            I am a student with 4+ years of academic experience in Software Development, Object Oreinted Programming, Machine Learning. I have worked as a Software Developer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a>, Dallas, Texas.<br/>
+            I want to use my problem-solving skills to solve real world problems by building new products in technology and enhancing them.<br/>
+            <br/>
+            <ul className="strengths">
+              <li>Multi-Cultural Fluency</li>
+              <li>Mentorship</li>
+              <li>Team Player</li>
+              </ul>
+            </p>
+          </div>
         </div>
-        <img className="background-image-left" alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
