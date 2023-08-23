@@ -1,78 +1,60 @@
 import { Container, Row, Col, Tab} from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/project-img1.png";
 import projImg2 from "../assets/project-img2.png";
 import projImg3 from "../assets/project-img3.png";
-import colorSharp2 from "../assets/color-sharp2.png";
+import projImg4 from "../assets/project-img4.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
-
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      id: 1,
+      title: "Project 1",
+      image: projImg1,
+      link: "/project1"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      id: 2,
+      title: "Project 2",
+      image: projImg2,
+      link: "/project2"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      id: 3,
+      title: "Project 3",
+      image: projImg3,
+      link: "/project3"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      id: 3,
+      title: "Project 3",
+      image: projImg4,
+      link: "/project3"
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // Add more projects as needed
   ];
 
   return (
     <section className="project" id="projects">
       <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2><br/>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
-          </Col>
+        <Row className="justify-content-center">
+        <Col xs={12} className="text-center"> 
+          <h2>Projects</h2><br/>
+        </Col>
+          {projects.map(project => (
+            <Col key={project.id} xs={12} md={6} lg={3} className="project-box">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div className={`project-content ${isVisible ? "animated fadeInUp" : ""}`}>
+                    <img src={project.image} alt={`Project ${project.id}`} />
+                    <h3>{project.title}</h3>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

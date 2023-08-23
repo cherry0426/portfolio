@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import logo from '../assets/logo.png';
+import resumePdf from '../assets/your_resume.pdf';
+import { Navbar, Nav, Container} from "react-bootstrap";
 import navIcon1 from '../assets/nav-icon1.svg';
 import navIcon2 from '../assets/nav-icon2.svg';
 import navIcon3 from '../assets/nav-icon3.svg';
@@ -13,6 +13,12 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const handleDownload = () => {
+  const link = document.createElement('a');
+    link.href = resumePdf;
+    link.download = 'your_resume.pdf'; // Change the downloaded file name if needed
+    link.click();
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -47,7 +53,6 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -56,7 +61,7 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let's Connect</span></button>
+              <button className="vvd" id="resume" onClick={handleDownload}><span>Resume</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
