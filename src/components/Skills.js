@@ -20,11 +20,14 @@ export const Skills = () => {
             </ul>
           </div>
           <div className="col-md-8">
-            <h2>About Me</h2>
+            <h2 className = "col-header">About Me</h2>
             <p className="about-me-paragraph">
             A Masters Degree from The University of Texas at Dallas in Computer Science, 2023.<br />
-            I am a student with 4+ years of academic experience in Software Development, Object Oreinted Programming, Machine Learning. I have worked as a Software Developer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a>, Dallas, Texas for 8 months.<br/>
-            I want to use my problem-solving skills to solve real world problems by building new products in technology and enhancing them.<br/>
+            I am a student with 4+ years of academic experience in Software Development, Object Oreinted Programming, Machine Learning.
+            I have worked as a Software Developer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a>,
+             Dallas, Texas for 8 months.<br/><br/>
+            I want to use my problem-solving skills to solve real world problems by building new products in technology and
+            enhancing them.<br/>
             <ul className="strengths">
               <li>Multi-Cultural Fluency</li>
               <li>Mentorship</li>

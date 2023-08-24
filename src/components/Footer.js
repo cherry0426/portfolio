@@ -7,13 +7,11 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} sm={6}>
+          <Col sm={4} className="text-center">
             <img src={logo} alt="Logo" />
           </Col>
-          <Col size={12} sm={6}><p>&copy; 2023. All Rights Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Made with &hearts; Ananya Reddy</p></Col>
+          <Col sm={4} className="text-center"><p>&copy; Made with &hearts; Ananya Reddy</p></Col>
+          <Col sm={4} className="text-center"><p>&copy; 2023. All Rights Reserved</p></Col>
         </Row>
       </Container>
     </footer>

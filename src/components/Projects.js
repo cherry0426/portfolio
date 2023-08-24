@@ -10,7 +10,7 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "To-Do lists: An interactive website using ReactJS and Spring like sticky notes where a user can write and store their to-do list, which works like a remainder system.",
+      title: "To-Do Lists: A simple interactive website using ReactJS, like sticky notes where a user can write and store their tasks. Create APIs using Spring for new tasks, manage and delete them.",
       image: projImg1,
       link: "/project1"
     },
@@ -40,7 +40,7 @@ export const Projects = () => {
       <Container>
         <Row className="justify-content-center">
         <Col xs={12} className="text-center">
-          <h2>Projects</h2><br/>
+          <h2 className="header-project">Projects</h2><br/>
         </Col>
           {projects.map(project => (
             <Col key={project.id} xs={12} md={6} lg={3} className="project-box">

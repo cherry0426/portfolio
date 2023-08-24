@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import resumePdf from '../assets/your_resume.pdf';
+import resumePdf from '../assets/resume.pdf';
 import { Navbar, Nav, Container} from "react-bootstrap";
 import navIcon1 from '../assets/nav-icon1.svg';
 import navIcon2 from '../assets/nav-icon2.svg';
@@ -16,7 +16,7 @@ export const NavBar = () => {
   const handleDownload = () => {
   const link = document.createElement('a');
     link.href = resumePdf;
-    link.download = 'your_resume.pdf';
+    link.download = 'resume.pdf';
     link.click();
   };
 

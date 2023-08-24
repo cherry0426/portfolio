@@ -28,8 +28,9 @@ export const Academics = () => {
           <li>
             The University of Texas at Dallas, Dallas, United States (August 2021 - May 2023)<br/>
             Master of Science in Computer Science<br/>
-            Courses: Analysis of Algorithms and Data Structures, Design and Analysis of Algorithms, Database design, Machine 
-            Learning, Statistical methods for Data Science, Web Programming Languages, Big Data and Analysis, Network Security<br/>
+            Courses: Analysis of Algorithms and Data Structures, Design and Analysis of Algorithms, Database design, Machine
+            Learning,
+            Statistical methods for Data Science, Web Programming Languages, Big Data and Analysis, Network Security<br/>
             GPA: 3.85
           </li><br/>
           <li>
