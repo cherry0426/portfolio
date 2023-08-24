@@ -16,7 +16,7 @@ export const NavBar = () => {
   const handleDownload = () => {
   const link = document.createElement('a');
     link.href = resumePdf;
-    link.download = 'your_resume.pdf'; // Change the downloaded file name if needed
+    link.download = 'your_resume.pdf';
     link.click();
   };
 
@@ -52,13 +52,14 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#academics" className={activeLink === 'academics' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('academics')}>Academics & Experience</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/ananyakatpally/"><img src={navIcon1} alt="lin"/></a>
+                <a href="#"><img src={navIcon2} alt="Ins"/></a>
+                <a href="https://github.com/cherry0426"><img src={navIcon3} alt="Git"/></a>
               </div>
               <HashLink to='#connect'>
               <button className="vvd" id="resume" onClick={handleDownload}><span>Resume</span></button>

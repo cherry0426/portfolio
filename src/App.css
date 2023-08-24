@@ -35,23 +35,23 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #000000;
+  background-color: #121212;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  align-items: center;
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
-  opacity: 0.75;
+  opacity: 0.6;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    text-decoration: none;
 }
 span.navbar-text {
     display: flex;
@@ -81,7 +81,7 @@ span.navbar-text {
     background: rgb(102, 199, 251);
     border-radius: 50%;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.5s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
@@ -137,7 +137,7 @@ nav.navbar .navbar-toggler:focus {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 242px 0 100px 0;
+  padding: 250px 0 100px 0;
   background-size: 160px;
   background-image: url('./assets/banner-bg.png');
   background-position: top;
@@ -155,7 +155,7 @@ nav.navbar .navbar-toggler:focus {
 }
 .banner h1 {
   color: white !important;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: 1;
@@ -164,19 +164,21 @@ nav.navbar .navbar-toggler:focus {
 }
 .banner p {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  background-color: #1a1a1a;
-  color: #fff;
+  border: 1px solid #000000;
+  background-color: black;
+  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.9px;
   display: flex;
+  padding: 1px 10px;
   align-items: center;
 }
 .banner button svg {
@@ -188,21 +190,29 @@ nav.navbar .navbar-toggler:focus {
 .banner button:hover svg {
   margin-left: 25px;
 }
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-
-/*skills************/
+/******skills************/
 
 .skill {
   padding: 55px 0 100px 0;
 }
 
-/* Skills.css */
-
 .skill {
-  padding: 90px 0;
+  padding: 106px 0;
 }
 
 .container {
@@ -214,6 +224,10 @@ nav.navbar .navbar-toggler:focus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.about-me-paragraph{
+  font-size:18px;
 }
 
 .col-md-4 {
@@ -237,15 +251,9 @@ nav.navbar .navbar-toggler:focus {
 }
 
 .skills-list li {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: white;
-}
-
-.skills-list li:before {
-  content: "\2022"; /* Bullet point */
+  margin-bottom: 5px;
+  font-size: 20px;
   color: #ffffff;
-  font-size: 24px;
   margin-right: 10px;
 }
 
@@ -270,7 +278,7 @@ a:hover {
 
 .strengths li {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -283,6 +291,69 @@ a:hover {
   z-index: -4;
 }
 
+/********** Academics.css**********/
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align tabs with the bottom of the panels */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tab {
+  padding: 10px 80px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 0px 5px; /* Add some spacing between tabs */
+}
+
+.tab.active {
+  background-color: rgb(102, 199, 251);
+  color: white;
+}
+
+.panels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 77%;
+}
+
+.panel {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.panel.active {
+  display: block;
+}
+
+.section-title{
+  background-color: #ffffff;
+  color:rgb(73, 184, 248);
+  font-size: 20px;
+}
+
+.section-title-ul{
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  font-size: 17px;
+}
+
 
 
 /************ Projects Css ************/
@@ -290,22 +361,19 @@ a:hover {
   padding: 65px 0;
 }
 
-.project h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-}
-
 .project-box {
   margin-bottom: 60px;
 }
 
 .project-content h3{
+  font-size: 16px;
   color:#000000;
 }
 
 .project-content {
   background-color: #fff;
   border-radius: 10px;
+  font-size: 16px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
@@ -319,15 +387,11 @@ a:hover {
 
 .project-content img {
   max-width: 100%;
-  height: 200px;
+  height: 150px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.project-content h3 {
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-}
 
 .project-content a {
   display: inline-block;
@@ -341,6 +405,27 @@ a:hover {
 
 .project-content a:hover {
   background-color: #0056b3;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 33px 20px;
+  background-image: url('./assets/banner-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  width: 295px;
+  height: 58px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }
 
 
