@@ -1,11 +1,6 @@
 Protfolio developed using HTML/CSS, Javascrpit, React(JSX)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
+Steps to run this project:
+1. Clone this repository
+2. Install npm if not installed
+3. Open the folder and run npm start.
