@@ -217,7 +217,7 @@ nav.navbar .navbar-toggler:focus {
 }
 /******skills************/
 .skill {
-  padding: 120px 10px 60px 0px;
+  padding: 130px 10px 60px 0px;
 }
 
 .container {
@@ -305,9 +305,10 @@ p {
 }
 
 .tab {
+  display: flex;
   padding: 15px 80px ;
-  background-color: #f0f0f0;
-  border: 0px solid #ccc;
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
   border-radius: 15px;
   cursor: pointer;
   font-size: 18px;
@@ -320,10 +321,11 @@ p {
 }
 
 .panels {
+  width: 80% !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 40px 0px 40px;
+  padding: 5px 0px 100px 0px;
 }
 
 .panel {
@@ -354,7 +356,7 @@ p {
 /************ Projects Css ************/
 
 .header-project{
-  margin-top: 85px !important;
+  margin-top: 80px !important;
 }
 
 .project-box {

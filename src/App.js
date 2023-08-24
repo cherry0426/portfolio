@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
-      <Academics/>
       <Projects />
+      <Academics/>
       <Footer />
     </div>
   );
