@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 120px;
 }
 
 body{
@@ -261,7 +261,35 @@ p {
 }
 
 /********** Academics.css**********/
+.mb-3{
+  color: '#fff';
+  border-radius: '5px';
+  font-size: '20px'
+};
 
+.mb-3.title{
+  color: '#fff';
+  border-radius: '5px';
+  font-size: '18px'
+}
+
+.nav-tabs .nav-link{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.nav-tabs .nav-link:hover{
+  color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active{
+    background-color: rgb(102, 199, 251);
+    color: white;
+  }
+
+.customTabStyle{
+  border: '1px solid rgb(102, 199, 251)' !important;
+  };
 
 /************ Projects Css ************/
 
@@ -317,7 +345,7 @@ p {
 
 /************ Footer Css ************/
 .footer {
-  padding: 10px 10px;
+  padding: 10px 0px;
   background-image: url('./assets/banner-bg.png');
   background-position: center center;
   background-size: cover;

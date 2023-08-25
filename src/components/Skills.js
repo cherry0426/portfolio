@@ -15,6 +15,13 @@ export const Skills = () => {
              Dallas, Texas for 8 months.<br/><br/>
             I want to use my problem-solving skills to solve real world problems by building new products in technology and
             enhancing them.<br/>
+            I have worked as a Software Developer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a>,
+             Dallas, Texas for 8 months.<br/><br/>
+            I want to use my problem-solving skills to solve real world problems by building new products in technology and
+            enhancing them.<br/>
+            Volunteered and Organized various IEEE technical workshops.
+            Developed a Taste Analyser based on facial expressions using Deep Learning in Smart India Hackathon in 2020
+            organized by the Government of India. Scored 8.5 in IELTS Speaking.<br/>
             <ul className="strengths">
               <li>Multi-Cultural Fluency</li>
               <li>Mentorship</li>

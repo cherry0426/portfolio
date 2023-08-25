@@ -12,24 +12,33 @@ export const Experience = () => {
 
   const tabContentStyle = {
     padding: '20px',
-    fontSize: '18px',
-    color: '#ffffff', // Set font color
+    fontSize: '17px',
+    color: '#000000', // Set font color
     lineHeight: '1.6',
+  };
+
+  const customTabStyle = {
+    backgroundColor: '#ffffff', // Set background color of inactive tabs
+    color: '#fff', // Set font color of inactive tabs
+    border: 'none', // Remove border
+    borderRadius: '5px', // Add border radius
+    margin: '0 0px', // Add margin between tabs
   };
 
   return (
     <section className="expeience" id="experiences">
     <div style={containerStyle}>
-      <div style={{ width: 960, padding: 50 }}>
+      <div style={{ width: 960, padding: 50, marginBottom: 60}}>
         <Tabs
-          defaultActiveKey="profile"
+          defaultActiveKey="home"
           id="fill-tab-example"
           className="mb-3"
           fill
+          style={{fontSize: 18}}
         >
-          <Tab eventKey="home" title="Copart Inc.">
+          <Tab eventKey="home" title="Copart Inc." style={customTabStyle}>
             <div style={tabContentStyle}>
-            Software Engineer Intern
+            Software Engineer Intern (May 2022-January 2023)
             <ul className="section-title-ul">
         <li>Worked on automating form generation and document management, saving $100K per year for the company.</li>
            <li>Developed REST API microservices for Front-end applications and business logic using Ruby on Rails for 
@@ -42,7 +51,7 @@ export const Experience = () => {
           </Tab>
           <Tab
             eventKey="profile"
-            title="The University of Texas at Dallas">
+            title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
             Graduate Student Assistant, Computer Science Department
             <ul className="section-title-ul">
@@ -52,7 +61,7 @@ export const Experience = () => {
          </ul>
             </div>
           </Tab>
-          <Tab eventKey="longer-tab" title="Ample IT">
+          <Tab eventKey="longer-tab" title="Ample IT" style={customTabStyle}>
             <div style={tabContentStyle}>
             Software Engineer Intern
             <ul className="section-title-ul">
