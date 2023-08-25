@@ -7,17 +7,21 @@ export const Skills = () => {
     <section className="skill" id="skills">
       <div className="container">
           <div className="col-md-8">
+          <div className="text-center">
             <h4 className = "col-header"><b>🚀 Launching Dreams into Pixels </b></h4>
+            </div>
             <p className="about-me-paragraph">
             Greetings! I'm Ananya, and I'm not just a software enthusiast - I'm a <b>passionate problem solver</b> driven by a
             relentless pursuit of innovation, with a <b>Master's Degree in Computer Science from UTD with a GPA of 3.85.</b><br/>
             I've honed my skills in areas ranging from cutting-edge algorithms to intuitive user experiences.<br/><br/>
-            👩‍💻 I have also worked as a <b>Software Developer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a>,
-             Dallas, Texas for 8 months.</b><br/>
+            👩‍💻 I also worked as a <b>Software Engineer Intern at <a href="https://www.copart.com/" alt="Copart">Copart</a> at
+             Dallas, Texas for 8 months</b> and also as a Graduate Teaching Assistant at The University of Texas at Dallas, Computer
+             Science Department.<br/>
 
             <ul className="strengths">
               <li>Strategic Thinker</li>
               <li>Data Wizardry</li>
+              <li>Version Control Virtuoso</li>
               <li>Collaborative Spirit</li>
               <li>Crafting Experiences</li>
               <li><b>Portfolio Highlights:</b> From COVID-19 Project that was developed in 2020 for a social cause

@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import { Bookshelf } from 'react-bootstrap-icons';
 
 export const Academics = () => {
   const containerStyle = {
@@ -43,7 +42,7 @@ export const Academics = () => {
         >
           <Tab eventKey="home" title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
-              <b>Master of Science in Computer Science specializing in Data Science</b> (August 2021 - May 2023)<br/>
+              <b>Master of Science in Computer Science specializing in Data Science (August 2021 - May 2023)</b> <br/>
               <ul>
               <li>Analysis of Algorithms and Data Structures</li>
               <li>Design and Analysis of Algorithms</li>
@@ -64,7 +63,7 @@ export const Academics = () => {
             tabClassName="custom-inactive-title"
           >
             <div style={tabContentStyle}>
-            <b>Bachelor of Technology in Computer Science and Engineering</b> (August 2017 - June 2021)<br/>
+            <b>Bachelor of Technology in Computer Science and Engineering (August 2017 - June 2021)</b><br/>
               <ul>
               <li>Design and Analysis of Algorithms</li>
               <li>Data Structues</li>
@@ -96,15 +95,14 @@ export const Academics = () => {
 
             <ul><b>Extra-Cirricular Activities</b>
             <li>Volunteered and Organized various IEEE technical workshops.</li>
-            <li>Developed a Taste Analyser based on facial expressions using Deep Learning in Smart India Hackathon in 2020</li>
-             <li>organized by the Government of India.</li>
+            <li>Won prizes in Painting competitions.</li>
           <li>Scored 8.5 in IELTS Speaking.</li>
           </ul>
 
           <ul><b>Hobbies</b>
-            <li>crafting my world as an artist</li>
-            <li>I can sing!</li>
-             <li>Reading books, you can checkout my bookshelf here: <a href="https://www.goodreads.com/user/show/101779467-ananya-reddy"
+            <li>Crafting my world as an artist</li>
+            <li>Trying to sing!</li>
+             <li>Reading books, checkout my bookshelf here! <a href="https://www.goodreads.com/user/show/101779467-ananya-reddy"
              alt="Bookshelf">Bookshelf</a></li>
           </ul>
             </div>

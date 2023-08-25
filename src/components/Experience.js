@@ -53,7 +53,7 @@ export const Experience = () => {
             eventKey="profile"
             title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
-            Graduate Student Assistant, Computer Science Department (September 2021 - May 2022)
+            <b>Graduate Student Assistant, Computer Science Department (September 2021 - May 2022)</b>
             <ul className="section-title-ul">
            <li>Graded assignments for CS2337 Programming in Java and CS1337 Programming in C++ courses.</li>
            <li>Assisted the professor in teaching classes and provided guidance to students.</li>
@@ -63,7 +63,7 @@ export const Experience = () => {
           </Tab>
           <Tab eventKey="longer-tab" title="Ample IT" style={customTabStyle}>
             <div style={tabContentStyle}>
-            Software Engineer Intern (May 2021 - July 2021)
+            <b>Software Engineer Intern (May 2021 - July 2021)</b>
             <ul className="section-title-ul">
            <li>Developed software for a Machine Learning model to verify, digitize, structure, and correlate scanned paper
              belonging to shipments for the trucking industry, reducing manual work by 90%.</li>

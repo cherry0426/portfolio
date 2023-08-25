@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 100px;
 }
 
 body{
@@ -120,7 +120,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: white;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -154,7 +154,7 @@ nav.navbar .navbar-toggler:focus {
 }
 .banner h1 {
   color: white !important;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: 1;
@@ -163,7 +163,7 @@ nav.navbar .navbar-toggler:focus {
 }
 .banner p {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -173,9 +173,9 @@ nav.navbar .navbar-toggler:focus {
   background-color: black;
   color: #ffffff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 60px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
   display: flex;
   padding: 9px 15px;
   align-items: center;
@@ -183,7 +183,7 @@ nav.navbar .navbar-toggler:focus {
 
 .banner button:hover {
   background-color: rgb(102, 199, 251);
-  color: #000000;
+  color: #ffffff;
 }
 
 .banner button svg {
@@ -196,7 +196,7 @@ nav.navbar .navbar-toggler:focus {
 .banner button:hover svg {
   margin-left: 25px;
   background-color: rgb(102, 199, 251);
-  color: #000000;
+  color: #ffffff;
 }
 
 .navbar-text button {
