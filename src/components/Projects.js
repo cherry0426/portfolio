@@ -12,13 +12,13 @@ export const Projects = () => {
       id: 1,
       title: "To-Do Lists: A simple interactive website using ReactJS, like sticky notes where a user can write and store their tasks. Create APIs using Spring for new tasks, manage and delete them.",
       image: projImg1,
-      link: "/project1"
+      link: "https://github.com/cherry0426/tasksfrontend"
     },
     {
       id: 2,
       title: "Resturant: A website for table reservation system where customers can make reservations at their convenience, reducing phone calls, wait time and enhancing user satisfaction by 50%.",
       image: projImg2,
-      link: "/project2"
+      link: "https://github.com/cherry0426/little-lemon-capstone"
     },
     {
       id: 3,

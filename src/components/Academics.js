@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import { Bookshelf } from 'react-bootstrap-icons';
 
 export const Academics = () => {
   const containerStyle = {
@@ -21,7 +22,7 @@ export const Academics = () => {
     backgroundColor: '#ffffff', // Set background color of inactive tabs
     color: '#ffffff', // Set font color of inactive tabs
     border: 'none', // Remove border
-    borderRadius: '5px', // Add border radius
+    borderRadius: '10px', // Add border radius
   };
 
   const customInactiveTitleStyle = {
@@ -42,10 +43,18 @@ export const Academics = () => {
         >
           <Tab eventKey="home" title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
-              Master of Science in Computer Science specializing in Data Science (August 2021 - May 2023)<br/>
-              Courses: Analysis of Algorithms and Data Structures, Design and Analysis of Algorithms, Database design, Machine
-              Learning,Statistical methods for Data Science, Web Programming Languages, Big Data and Analysis, Network Security<br/>
-              GPA: 3.85
+              <b>Master of Science in Computer Science specializing in Data Science</b> (August 2021 - May 2023)<br/>
+              <ul>
+              <li>Analysis of Algorithms and Data Structures</li>
+              <li>Design and Analysis of Algorithms</li>
+              <li>Database design</li>
+              <li>MachineLearning</li>
+              <li>Statistical methods for Data Science</li>
+              <li>Web Programming Languages</li>
+              <li>Big Data and Analysis</li>
+              <li>Network Security</li>
+              </ul>
+              <b>GPA: 3.85</b>
             </div>
           </Tab>
           <Tab
@@ -55,17 +64,49 @@ export const Academics = () => {
             tabClassName="custom-inactive-title"
           >
             <div style={tabContentStyle}>
-            Bachelor of Technology in Computer Science and Engineering (August 2017 - June 2021)<br/>
-           Courses:<br/>
-           GPA: 4.0
+            <b>Bachelor of Technology in Computer Science and Engineering</b> (August 2017 - June 2021)<br/>
+              <ul>
+              <li>Design and Analysis of Algorithms</li>
+              <li>Data Structues</li>
+              <li>Object Oriented Design</li>
+              <li>Database design</li>
+              <li>Cloud Computing</li>
+              <li>Web Programming Languages</li>
+              <li>Operating Systems</li>
+              <li>Computer Networks</li>
+              </ul>
+              <b>GPA: 4.0</b>
             </div>
           </Tab>
-          <Tab eventKey="longer-tab" title="Extra-Curricular Activities" style={customTabStyle}>
+          <Tab eventKey="longer-tab" title="Certifications, Volunteering, Hobbies & Extra-Cirricular Activities" style={customTabStyle}>
             <div style={tabContentStyle}>
-            Volunteered and Organized various IEEE technical workshops.<br/>
-           Developed a Taste Analyser based on facial expressions using Deep Learning in Smart India Hackathon in 2020<br/>
-             organized by the Government of India.
-          Scored 8.5 in IELTS Speaking.<br/>
+            <ul><b>Certifications</b>
+              <li>Meta FrontEnd Developer 2023</li>
+              <li>Learn to code with Ruby 2022</li>
+              <li>Python for Eveybody 2020</li>
+              <li>Hacker Rank Problem Solving 2020</li>
+            </ul>
+
+              <ul><b>Volunteering & Achievements</b>
+            <li>Volunteered and Organized various IEEE technical workshops.</li>
+            <li>Developed a Taste Analyser based on facial expressions using Deep Learning in Smart India Hackathon in 2020
+              organized by the Government of India.</li>
+          <li>Scored 8.5 in IELTS Speaking.</li>
+          </ul>
+
+            <ul><b>Extra-Cirricular Activities</b>
+            <li>Volunteered and Organized various IEEE technical workshops.</li>
+            <li>Developed a Taste Analyser based on facial expressions using Deep Learning in Smart India Hackathon in 2020</li>
+             <li>organized by the Government of India.</li>
+          <li>Scored 8.5 in IELTS Speaking.</li>
+          </ul>
+
+          <ul><b>Hobbies</b>
+            <li>crafting my world as an artist</li>
+            <li>I can sing!</li>
+             <li>Reading books, you can checkout my bookshelf here: <a href="https://www.goodreads.com/user/show/101779467-ananya-reddy"
+             alt="Bookshelf">Bookshelf</a></li>
+          </ul>
             </div>
           </Tab>
         </Tabs>

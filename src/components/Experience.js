@@ -21,7 +21,7 @@ export const Experience = () => {
     backgroundColor: '#ffffff', // Set background color of inactive tabs
     color: '#fff', // Set font color of inactive tabs
     border: 'none', // Remove border
-    borderRadius: '5px', // Add border radius
+    borderRadius: '10px', // Add border radius
     margin: '0 0px', // Add margin between tabs
   };
 
@@ -38,14 +38,14 @@ export const Experience = () => {
         >
           <Tab eventKey="home" title="Copart Inc." style={customTabStyle}>
             <div style={tabContentStyle}>
-            Software Engineer Intern (May 2022-January 2023)
+            <b>Software Engineer Intern (June 2022-January 2023)</b>
             <ul className="section-title-ul">
-        <li>Worked on automating form generation and document management, saving $100K per year for the company.</li>
-           <li>Developed REST API microservices for Front-end applications and business logic using Ruby on Rails for 
-            Back-End and JavaScript, ReactJS for the Front-End.</li>
+        <li>Worked on designing and developing process of Title Procurement – Automating Form Generation, Document Management and
+          Ownership Transfer process of Vehicles, which would save $100K per year for the company.</li>
+           <li>Learned Ruby from scratch. Developed REST API microservices with Ruby and utilized a range of SQL and NoSQL databases to support the backend.</li>
            <li>Utilized MySQL database and Redis cache to support the backend.</li>
-           <li>Peer code review, Jenkins build creation, debugging Solr issues, fixing bugs in QA and production to resolve 10% 
-             of open defects and implement new functionalities.</li>
+           <li>Peer code review, Jenkins build creation, debugging Solr issues, fixing bugs in QA and production to resolve 10%
+             of open defects and implement new functionalities were some of my job duties.</li>
           </ul>
             </div>
           </Tab>
@@ -53,7 +53,7 @@ export const Experience = () => {
             eventKey="profile"
             title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
-            Graduate Student Assistant, Computer Science Department
+            Graduate Student Assistant, Computer Science Department (September 2021 - May 2022)
             <ul className="section-title-ul">
            <li>Graded assignments for CS2337 Programming in Java and CS1337 Programming in C++ courses.</li>
            <li>Assisted the professor in teaching classes and provided guidance to students.</li>
@@ -63,7 +63,7 @@ export const Experience = () => {
           </Tab>
           <Tab eventKey="longer-tab" title="Ample IT" style={customTabStyle}>
             <div style={tabContentStyle}>
-            Software Engineer Intern
+            Software Engineer Intern (May 2021 - July 2021)
             <ul className="section-title-ul">
            <li>Developed software for a Machine Learning model to verify, digitize, structure, and correlate scanned paper
              belonging to shipments for the trucking industry, reducing manual work by 90%.</li>
