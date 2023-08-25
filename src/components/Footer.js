@@ -10,7 +10,7 @@ export const Footer = () => {
           <Col sm={4} className="text-center">
             <img src={logo} alt="Logo" />
           </Col>
-          <Col sm={4} className="text-center"><p>&copy; Made with &hearts; Ananya Reddy</p></Col>
+          <Col sm={4} className="text-center"><p>Made by Ananya Reddy</p></Col>
           <Col sm={4} className="text-center"><p>&copy; 2023. All Rights Reserved</p></Col>
         </Row>
       </Container>

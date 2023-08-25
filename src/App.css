@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 100px;
 }
 
 body{
@@ -136,8 +136,7 @@ nav.navbar .navbar-toggler:focus {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 245px 0 130px 0;
+  padding: 245px 0 100px 0;
   background-size: 160px;
   background-image: url('./assets/banner-bg.png');
   background-position: top;
@@ -215,40 +214,14 @@ nav.navbar .navbar-toggler:focus {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-/******skills************/
-.skill {
-  padding: 130px 10px 60px 0px;
-}
 
-.container {
-  margin: 10px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.col-header{
-  padding: 1px 15px;
-}
-.about-me-paragraph{
-  font-size:18px;
-  padding: 0px 15px;
-}
-
-.col-md-4 {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
+/*********skills************/
 .col-md-8 {
   background-color: #ffffff;
-  flex: 2;
+  flex: 1;
   padding: 20px;
   border-radius: 15px; /* Add border radius */
-  margin: 0px; /* Add some margin */
+  margin: 150px auto
 }
 
 .skills-list {
@@ -267,7 +240,6 @@ nav.navbar .navbar-toggler:focus {
 p {
   font-size: 18px;
   color: #000000;
-  line-height: 1.6;
 }
 
 .strengths {
@@ -275,7 +247,6 @@ p {
 }
 
 .strengths li {
-  margin-bottom: 5px;
   font-size: 18px;
   color: #333;
 }
@@ -290,77 +261,16 @@ p {
 }
 
 /********** Academics.css**********/
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
 
-.tabs {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Align tabs with the bottom of the panels */
-  margin-bottom: 10px;
-  margin-top: 60px;
-}
-
-.tab {
-  display: flex;
-  padding: 15px 80px ;
-  background-color: #ffffff;
-  border: 0px solid #ffffff;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 18px;
-  margin: 0px 4px; /* Add some spacing between tabs */
-}
-
-.tab.active {
-  background-color: rgb(102, 199, 251);
-  color: white;
-}
-
-.panels {
-  width: 80% !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px 0px 100px 0px;
-}
-
-.panel {
-  display: none;
-  width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-}
-
-.panel.active {
-  display: block;
-}
-
-.section-title{
-  background-color: #ffffff;
-  color:rgb(73, 184, 248);
-  font-size: 20px;
-}
-
-.section-title-ul{
-  background-color: #ffffff;
-  color:rgb(0, 0, 0);
-  font-size: 18px;
-}
 
 /************ Projects Css ************/
 
 .header-project{
-  margin-top: 80px !important;
+  margin-top: 100px;
 }
 
 .project-box {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .project-content h3{

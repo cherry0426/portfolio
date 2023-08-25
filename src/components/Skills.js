@@ -6,19 +6,6 @@ export const Skills = () => {
     return (
     <section className="skill" id="skills">
       <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <h2>Tech Stack</h2>
-            <ul className="skills-list">
-              <li>Python</li>
-              <li>Ruby</li>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>HTML/CSS</li>
-              <li>Javascript</li>
-              <li>AWS</li>
-            </ul>
-          </div>
           <div className="col-md-8">
             <h2 className = "col-header">About Me</h2>
             <p className="about-me-paragraph">
@@ -34,7 +21,6 @@ export const Skills = () => {
               <li>Team Player</li>
               </ul>
             </p>
-          </div>
         </div>
       </div>
       <img className="background-image-left" src={colorSharp} alt="Image" />

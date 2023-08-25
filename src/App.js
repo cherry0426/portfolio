@@ -7,6 +7,7 @@ import {Projects} from './components/Projects.js';
 import {Footer} from './components/Footer.js';
 import {Academics} from './components/Academics.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Experience } from './components/Experience';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
-      <Projects />
       <Academics/>
+      <Experience />
+      <Projects />
       <Footer />
     </div>
   );
