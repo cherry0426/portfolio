@@ -12,17 +12,18 @@ export const Experience = () => {
 
   const tabContentStyle = {
     padding: '20px',
-    fontSize: '17px',
-    color: '#000000', // Set font color
-    lineHeight: '1.6',
+    fontSize: '19px',
+    margin: '-21px 0px 20px 0px',
+    color: '#495057', // Set font color
+    fontFamily: "Garamond",
+    fontWeight: '500',
   };
 
   const customTabStyle = {
     backgroundColor: '#ffffff', // Set background color of inactive tabs
-    color: '#fff', // Set font color of inactive tabs
+    color: '#ffffff', // Set font color of inactive tabs
     border: 'none', // Remove border
     borderRadius: '10px', // Add border radius
-    margin: '0 0px', // Add margin between tabs
   };
 
   return (

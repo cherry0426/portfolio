@@ -6,16 +6,16 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 75px;
 }
 
 body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: rgb(0, 0, 0) !important;
-  color: rgb(102, 199, 251) !important;
-  font-family: 'Times New Roman', Times, serif !important;
+  background-color: #e9ecef !important;
+  color: rgb(24,119,242) !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6{
 
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -35,23 +34,24 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #dee2e6;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
-}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
+  font-weight: 550;
+  color: #000000;
+  letter-spacing: 0.3px;
+  padding: 0 10px;
+  font-size: 16px;
   opacity: 0.6;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    text-decoration: none;
+}
+span.navbar-text {
+    display: flex;
+    align-items: center;
 }
 span.navbar-text {
     display: flex;
@@ -71,14 +71,15 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(255, 255, 255);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background: rgb(102, 199, 251);
+    background-color: rgb(24,119,242) !important;
+    color: rgb(0, 0, 0);
     border-radius: 50%;
     transform: scale(0);
 	  transition: 0.5s ease-in-out;
@@ -94,33 +95,42 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 21px solid #fff;
-  padding: 18px 60px !important;
+  border-radius: 15px;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
+
 .navbar-text button::before {
   content: "";
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color:rgb(102, 199, 251);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .navbar-text button:hover {
-  color: white;
+  color: #000000;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -128,107 +138,141 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
     box-shadow: none;
 }
 
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
 /************ Banner Css ************/
+.cont{
+  padding-bottom: 90px;
+}
+
+.tagline{
+  font-size: 75px;
+}
+
 .banner {
-  padding: 245px 0 200px 0;
+  margin-top: 0;
+  padding: 220px 10px 250px 10px;
   background-size: 160px;
-  background-image: url('./assets/banner-bg.png');
+  background-color: #e9ecef;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner.tagline {
-  color: white;
-  font-weight: 800;
-  letter-spacing: 0.9px;
-  padding: 8px 10px;
-  font-size: 42px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
+
 .banner h1 {
-  color: white !important;
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.9px;
+  color: rgb(24,119,242) !important;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
   line-height: 1;
   margin-bottom: 15px;
   display: block;
 }
+
 .banner p {
-  color: white;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
+  color:  #6c757d;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  line-height: 1.8em;
   width: 96%;
 }
-.banner button {
-  border: 1px solid #ffffff;
-  background-color: black;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 60px;
-  letter-spacing: 0.5px;
-  display: flex;
-  padding: 9px 15px;
-  align-items: center;
-}
 
-.banner button:hover {
-  background-color: rgb(102, 199, 251);
-  color: #ffffff;
-}
-
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-
-.banner button:hover svg {
-  margin-left: 25px;
-  background-color: rgb(102, 199, 251);
-  color: #ffffff;
-}
-
-.navbar-text button {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
+.txt-rotate{
+  font-size: 35px;
+  letter-spacing: 0px;
 }
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
+/* Add this CSS code to your component's CSS or a separate CSS file */
+.vvd {
+  background-image: linear-gradient(to right, rgb(111, 165, 235) 0%, rgb(24,119,242) 0%);
+  background-size: 0% 100%;
+  border: 1px solid rgb(24,119,242);
+  padding: 20px 45px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: rgb(24,119,242); /* Initial text color */
+  cursor: pointer;
+  transition: background-size 0.3s ease-out, color 0.3s ease-in;
+  outline: none;
+}
+
+.vvd:hover {
+  background-size: 100% 100%;
+  color: white; /* Text color on hover */
+}
+
+
 /*********skills************/
+.highlight{
+  color: black;;
+}
+
 .col-header{
   font-size: '16px';
 }
+
 .col-md-8 {
   background-color: #ffffff;
+  border: '5px solid blue';
   flex: 1;
-  padding: 20px;
   border-radius: 15px; /* Add border radius */
-  margin: 150px auto;
+  margin: 30px auto;
 }
 
 .skills-list {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -241,8 +285,9 @@ nav.navbar .navbar-toggler:focus {
 }
 
 p {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
-  color: #000000;
+  color: #4f4f4f;
 }
 
 .strengths {
@@ -251,22 +296,25 @@ p {
 
 .strengths li {
   font-size: 18px;
-  color: #333;
+  color: #6c757d;
 }
 
-.background-image-left {
-  background-color: #000000;
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+.border-color {
+  border: 2px solid rgb(255, 255, 255); /* Set your preferred border color (e.g., red) */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.border-color:hover {
+  border: 2px solid rgb(24, 119, 242); /* Set your preferred border color (e.g., red) */
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /********** Academics.css**********/
 .mb-3{
-  color: '#fff';
-  border-radius: '5px';
+  color: white;
+  border-radius: '15px 0px 0px 0px';
   font-size: '20px'
 };
 
@@ -277,17 +325,23 @@ p {
 }
 
 .nav-tabs .nav-link{
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: white;
+  border: '1px solid rgb(102, 199, 251)';
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  letter-spacing: 0px;
 }
 
 .nav-tabs .nav-link:hover{
-  color: white;
+  color:rgb(24, 119, 242);
 }
 
 .nav-tabs .nav-item .nav-link.active{
-    background-color: rgb(102, 199, 251);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(24,119,242);
+    border-bottom: 3px solid rgb(24, 119, 242);
+    border: 'none' !important;
   }
 
 .customTabStyle{
@@ -320,8 +374,8 @@ p {
 }
 
 .project-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 8px rgba(46, 46, 46, 0.2);
+  transform: translateY(-12px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-content img {
@@ -335,7 +389,7 @@ p {
 .project-content a {
   display: inline-block;
   padding: 8px 16px;
-  background-color: rgb(102, 199, 251);
+  background-color: rgb(24, 119, 242);
   color: #fff;
   border-radius: 5px;
   text-decoration: none;

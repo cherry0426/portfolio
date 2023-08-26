@@ -1,10 +1,24 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import resumePdf from '../assets/resume.pdf';
+import { HashLink } from 'react-router-hash-link';
 import headerImg from "../assets/header.jpg";
 import 'animate.css';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+import { Border, BorderOuter } from "react-bootstrap-icons";
+
 
 export const Banner = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+      link.href = resumePdf;
+      link.download = 'resume.pdf';
+      link.click();
+    };
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -40,33 +54,38 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(90);
+      setDelta(45);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
 
   return (
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={10} md={6} xl={7}>
-                <span className="tagline">Hi there!</span>
-                <h1>{"I'm Ananya,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                <p>⭐ So, welcome to my digital realm, where every line of code and every pixel is a masterpiece in the making. Let's embark on a journey through the bytes and pixels that shape our world.<br/>
+                <span className="tagline">Ananya Katpally</span>
+                <h1>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}<br/></span></span></h1>
+                <p>⭐ Hi there! Welcome to my digital realm, where every line of code and every pixel is a masterpiece in the making. Let's embark on a journey through the bytes and pixels that shape our world.<br/>
                 ⭐ A Computer Science Student who is passionate about building and enhancing software products.
-                  I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p>
-                <button onClick={() => window.location.href = 'mailto:ananya.katpally26@gmail.com?subject=Let%27s%20Connect&body=Hi%20Ananya,%0A%0AI%20came%20across%20your%20portfolio%20and%20I%20would%20like%20to%20connect%20with%20you.%0A%0ARegards,%0A[Your%20Name]'}
-                >Let's Connect!<ArrowRightCircle size={28} /></button>
+                  I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p><br/>
+                <span className="tagline-resume">
+                <HashLink to='#connect'>
+                  <button className="vvd" id="resume" onClick={handleDownload}><span>Resume</span></button>
+                </HashLink>
+                </span>
           </Col>
           <Col xs={11} md={6} xl={4} className="d-flex justify-content-end">
           <div className="image-container">
-            <img src={headerImg} alt="Header Img" width = "300px" height = "385px" style={{ borderRadius: "50%", width: "370px", height: "370px" }} />
+          <img src={headerImg} alt="Header Img" style={{ borderRadius: "50%", width: "380px", height: "380px"}} />
           </div>
         </Col>
         </Row>
       </Container>
     </section>
+  </Router>
   )
 }
 
