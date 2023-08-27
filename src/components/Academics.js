@@ -103,7 +103,7 @@ export const Academics = () => {
           <li>Scored 8.5 in IELTS Speaking.</li>
           </ul>
 
-          <ul><h5><b></b>Hobbies</h5>
+          <ul><h5><b>Hobbies</b></h5>
             <li>Crafting my world as an artist</li>
             <li>Trying to sing!</li>
              <li>Reading books, checkout my bookshelf here! <a href="https://www.goodreads.com/user/show/101779467-ananya-reddy"

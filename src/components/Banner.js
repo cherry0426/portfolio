@@ -68,7 +68,8 @@ export const Banner = () => {
           <Col xs={10} md={6} xl={7}>
                 <span className="tagline">Ananya Katpally</span>
                 <h1>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}<br/></span></span></h1>
-                <p>⭐ Hi there! Welcome to my digital realm, where every line of code and every pixel is a masterpiece in the making. Let's embark on a journey through the bytes and pixels that shape our world.<br/>
+                <p className="intro-paragraph">⭐ Hi there! Welcome to my digital realm, where every line of code and is a masterpiece in the making. Let's embark on a
+                journey as where explore this digital world, one project at a time.<br/>
                 ⭐ A Computer Science Student who is passionate about building and enhancing software products.
                   I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p><br/>
                 <span className="tagline-resume">

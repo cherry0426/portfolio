@@ -16,7 +16,7 @@ export const Projects = () => {
     },
     {
       id: 2,
-      title: "Resturant: A website for table reservation system where customers can make reservations at their convenience, reducing phone calls, wait time and enhancing user satisfaction by 50%.",
+      title: "Restaurant: A website for table reservation system where customers can make reservations at their convenience, reducing phone calls, wait time and enhancing user satisfaction by 50%.",
       image: projImg2,
       link: "https://github.com/cherry0426/little-lemon-capstone"
     },
@@ -35,6 +35,11 @@ export const Projects = () => {
     // Add more projects as needed
   ];
 
+  const titleStyle = {
+    fontFamily: "timesnewroman",
+    fontSize: "20px",
+  };
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -46,13 +51,13 @@ export const Projects = () => {
             <Col key={project.id} xs={12} md={6} lg={3} className="project-box">
               <TrackVisibility>
                 {({ isVisible }) => (
-                  <div className={`project-content ${isVisible ? "animated fadeInUp" : ""}`}>
-                    <img src={project.image} alt={`Project ${project.id}`} />
-                    <h3>{project.title}</h3>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                  </div>
+                <div className={`project-content ${isVisible ? "animated fadeInUp" : ""}`}>
+                  <img src={project.image} alt={`Project ${project.id}`} />
+                  <h3 className="project-title" style={titleStyle}>{project.title}</h3>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
                 )}
-              </TrackVisibility>
+            </TrackVisibility>
             </Col>
           ))}
         </Row>
