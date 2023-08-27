@@ -39,8 +39,12 @@ export const Academics = () => {
           fill
         >
           <Tab eventKey="home" title="The University of Texas at Dallas" style={customTabStyle}>
-            <div style={tabContentStyle}>
-              <h5><b>Master of Science in Computer Science specializing in Data Science (August 2021 - May 2023)</b></h5> 
+          <div style={tabContentStyle}>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <b>Master of Science in Computer Science specializing in Data Science</b>
+            <span className="date-heading" style={{textAlign: 'right'}}><b>August 2021 - May 2023</b></span>
+            </h5>
+            <b>GPA: <i>3.85</i></b>
               <ul>
               <li>Analysis of Algorithms and Data Structures</li>
               <li>Design and Analysis of Algorithms</li>
@@ -51,7 +55,6 @@ export const Academics = () => {
               <li>Big Data and Analysis</li>
               <li>Network Security</li>
               </ul>
-              <b>GPA: 3.85</b>
             </div>
           </Tab>
           <Tab
@@ -61,7 +64,11 @@ export const Academics = () => {
             tabClassName="custom-inactive-title"
           >
             <div style={tabContentStyle}>
-            <h5><b>Bachelor of Technology in Computer Science and Engineering (August 2017 - June 2021)</b></h5>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <b>Bachelor of Technology in Computer Science and Engineering</b>
+            <span className="date-heading" style={{textAlign: 'right'}}><b>August 2017 - June 2021</b></span>
+            </h5>
+            <b>GPA: <i>4.0</i></b>
               <ul>
               <li>Design and Analysis of Algorithms</li>
               <li>Data Structues</li>
@@ -72,7 +79,6 @@ export const Academics = () => {
               <li>Operating Systems</li>
               <li>Computer Networks</li>
               </ul>
-              <b>GPA: 4.0</b>
             </div>
           </Tab>
           <Tab eventKey="longer-tab" title="Certifications" style={customTabStyle}>

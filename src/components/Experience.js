@@ -39,7 +39,14 @@ export const Experience = () => {
         >
           <Tab eventKey="home" title="Copart Inc." style={customTabStyle}>
             <div style={tabContentStyle}>
-            <b>Software Engineer Intern (June 2022-January 2023)</b>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <b>Software Engineer Intern</b>
+            <span className="date-heading" style={{textAlign: 'right'}}><b>Dallas, Texas</b></span>
+            </h5>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <i><b>June 2022 - January 2023</b></i>
+            <span className="date-heading" style={{textAlign: 'right'}}><b><i>8 months</i></b></span>
+            </h5>
             <ul className="section-title-ul">
         <li>Worked on designing and developing process of Title Procurement – Automating Form Generation, Document Management and
           Ownership Transfer process of Vehicles, which would save $100K per year for the company.</li>
@@ -54,7 +61,14 @@ export const Experience = () => {
             eventKey="profile"
             title="The University of Texas at Dallas" style={customTabStyle}>
             <div style={tabContentStyle}>
-            <b>Graduate Student Assistant, Computer Science Department (September 2021 - May 2022)</b>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <b>Graduate Student Assistant, Computer Science Department</b>
+            <span className="date-heading" style={{textAlign: 'right'}}><b>Dallas, Texas</b></span>
+            </h5>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <i><b>September 2021 - May 2022</b></i>
+            <span className="date-heading" style={{textAlign: 'right'}}><b><i>9 months</i></b></span>
+            </h5>
             <ul className="section-title-ul">
            <li>Graded assignments for CS2337 Programming in Java and CS1337 Programming in C++ courses.</li>
            <li>Assisted the professor in teaching classes and provided guidance to students.</li>
@@ -64,7 +78,14 @@ export const Experience = () => {
           </Tab>
           <Tab eventKey="longer-tab" title="Ample IT" style={customTabStyle}>
             <div style={tabContentStyle}>
-            <b>Software Engineer Intern (May 2021 - July 2021)</b>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <b>Software Engineer Intern</b>
+            <span className="date-heading" style={{textAlign: 'right'}}><b>Hyderabad, India</b></span>
+            </h5>
+            <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <i><b>May 2021 - July 2021</b></i>
+            <span className="date-heading" style={{textAlign: 'right'}}><b><i>3 months</i></b></span>
+            </h5>
             <ul className="section-title-ul">
            <li>Developed software for a Machine Learning model to verify, digitize, structure, and correlate scanned paper
              belonging to shipments for the trucking industry, reducing manual work by 90%.</li>

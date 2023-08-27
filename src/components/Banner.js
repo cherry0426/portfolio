@@ -54,7 +54,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(45);
+      setDelta(30);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -67,7 +67,7 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={10} md={6} xl={7}>
                 <span className="tagline">Ananya Katpally</span>
-                <h1>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}<br/></span></span></h1>
+                <h1>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}<br/></span></span></h1>
                 <p>⭐ Hi there! Welcome to my digital realm, where every line of code and every pixel is a masterpiece in the making. Let's embark on a journey through the bytes and pixels that shape our world.<br/>
                 ⭐ A Computer Science Student who is passionate about building and enhancing software products.
                   I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p><br/>

@@ -7,11 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col sm={4} className="text-center">
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col sm={4} className="text-center"><p>Created by Ananya Reddy</p></Col>
-          <Col sm={4} className="text-center"><p>&copy; 2023. All Rights Reserved</p></Col>
+          <Col className="text-center"><p>&copy; Made by Ananya Reddy</p></Col>
         </Row>
       </Container>
     </footer>
