@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import resumePdf from '../assets/resume.pdf';
+import resumePdf from '../assets/ananyakatpally.pdf';
 import { HashLink } from 'react-router-hash-link';
 import headerImg from "../assets/header.jpg";
 import 'animate.css';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import { Border, BorderOuter } from "react-bootstrap-icons";
+
 
 
 export const Banner = () => {
@@ -15,7 +15,7 @@ export const Banner = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
       link.href = resumePdf;
-      link.download = 'resume.pdf';
+      link.download = 'ananyakatpally.pdf';
       link.click();
     };
 
@@ -24,7 +24,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Developer", "Data Analyst", "Web Developer"];
+  const toRotate = ["Software Engineer", "Full-Stack Developer", "Backend Software Developer", "Web Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(30);
+      setDelta(45);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -65,22 +65,26 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={10} md={6} xl={7}>
+          <Col xs={12} md={6} xl={8}>
                 <span className="tagline">Ananya Katpally</span>
-                <h1>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}<br/></span></span></h1>
+                <h5>{"I'm a,"} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}<br/></span></span></h5>
                 <p className="intro-paragraph">⭐ Hi there! Welcome to my digital realm, where every line of code and is a masterpiece in the making. Let's embark on a
-                journey as where explore this digital world, one project at a time.<br/>
+                journey where we explore this digital world, one project at a time.<br/>
                 ⭐ A Computer Science Student who is passionate about building and enhancing software products.
                   I'm also an artist and a book worm, I love reading books! I live in Dallas, Texas.</p><br/>
                 <span className="tagline-resume">
+                {/* <Row className="aligh-items-center">
+                <Col xs={12} md={6} xl={12}> */}
                 <HashLink to='#connect'>
                   <button className="vvd" id="resume" onClick={handleDownload}><span>Resume</span></button>
-                </HashLink>
+                </HashLink><br/>
+                {/* </Col>
+                </Row> */}
                 </span>
           </Col>
-          <Col xs={11} md={6} xl={4} className="d-flex justify-content-end">
+          <Col xs={12} md={6} xl={4} className="d-flex justify-content-center align-items-center">
           <div className="image-container">
-          <img src={headerImg} alt="Header Img" style={{ borderRadius: "50%", width: "380px", height: "380px"}} />
+          <img src={headerImg} alt="Header Img" style={{ borderRadius: "50%", width: "360px", height: "400px" }} />
           </div>
         </Col>
         </Row>

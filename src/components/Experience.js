@@ -15,7 +15,7 @@ export const Experience = () => {
     fontSize: '19px',
     margin: '-21px 0px 20px 0px',
     color: '#495057', // Set font color
-    fontFamily: "Garamond",
+    fontFamily: "helvatica",
     fontWeight: '500',
   };
 

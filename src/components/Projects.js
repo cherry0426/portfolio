@@ -36,8 +36,8 @@ export const Projects = () => {
   ];
 
   const titleStyle = {
-    fontFamily: "timesnewroman",
-    fontSize: "20px",
+    fontFamily: "helavtica",
+    fontSize: "18px",
   };
 
   return (

@@ -16,7 +16,7 @@ export const Academics = () => {
     margin: '-19px 0px 75px 0px',
     borderRadius: '0px 0px 15px 15px',
     color: '#495057', // Set font color
-    fontFamily: "Garamond",
+    fontFamily: "helvatica",
     fontWeight: '500',
   };
 
